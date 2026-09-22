@@ -1,0 +1,8 @@
+{
+  "name": "Control Roll Kiosco",
+  "short_name": "ControlRoll",
+  "start_url": "/kiosk",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#020617"
+}

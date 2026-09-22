@@ -1,0 +1,29 @@
+{
+  "name": "control-roll",
+  "version": "1.0.0",
+  "main": "electron-admin.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "dist:admin": "electron-builder --win nsis -c.extraMetadata.main=electron-admin.js -c.productName=\"Control Roll Admin\""
+  },
+  "build": {
+    "appId": "com.controlroll.admin",
+    "productName": "Control Roll Admin",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Control Roll Admin"
+    }
+  }
+}
