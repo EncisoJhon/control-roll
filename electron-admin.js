@@ -13,10 +13,10 @@ function createWindow() {
     },
   });
 
-  // Apunta a la vista administrativa
+  // Apunta directamente a la nube de Vercel
   const targetUrl = process.env.APP_URL 
     ? `${process.env.APP_URL}/admin` 
-    : 'http://localhost:3000/admin';
+    : 'https://control-roll-uk3d-pi.vercel.app/admin';
 
   win.loadURL(targetUrl);
   win.on('closed', () => { win = null; });

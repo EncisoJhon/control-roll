@@ -27,6 +27,9 @@
     }
   },
   "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
     "@supabase/supabase-js": "^2.117.0",
     "@tailwindcss/postcss": "^4.3.3",
     "canvas-confetti": "^1.9.4",
@@ -43,6 +46,8 @@
     "@types/canvas-confetti": "^1.9.0",
     "@types/node": "26.6.2",
     "@types/react": "19.3.0",
+    "electron": "^44.4.4",
+    "electron-builder": "^26.15.3",
     "typescript": "7.0.2"
   }
 }

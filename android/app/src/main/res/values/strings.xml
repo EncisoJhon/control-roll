@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Control Roll Kiosk</string>
+    <string name="title_activity_main">Control Roll Kiosk</string>
+    <string name="package_name">com.controlroll.app</string>
+    <string name="custom_url_scheme">com.controlroll.app</string>
+</resources>
