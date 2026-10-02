@@ -198,11 +198,22 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 p-6">
-      {/* ENCABEZADO */}
+{/* ENCABEZADO */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-        <div>
-          <h1 className="text-2xl font-black text-slate-800 tracking-tight">Control Roll — Consola Administrativa</h1>
-          <p className="text-sm text-slate-500">Gestión global de colaboradores, asistencias y regularizaciones</p>
+        <div className="flex items-center gap-4">
+          <img 
+            src="/logo-inmutec.png" 
+            alt="Logo Inmutec" 
+            className="h-14 w-auto object-contain"
+          />
+          <div>
+            <h1 className="text-2xl font-black text-slate-800 tracking-tight">
+              Multiservicios Inmutec Control Roll Admin
+            </h1>
+            <p className="text-sm text-slate-500">
+              Gestión global de colaboradores, asistencias y regularizaciones
+            </p>
+          </div>
         </div>
 
         <div className="flex flex-wrap items-center gap-3">

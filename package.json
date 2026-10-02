@@ -7,11 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dist:admin": "electron-builder --win nsis -c.extraMetadata.main=electron-admin.js -c.productName=\"Control Roll Admin\""
+    "dist:admin": "electron-builder --win nsis -c.extraMetadata.main=electron-admin.js -c.productName=\"Multiservicios Inmutec Control Roll Admin\""
   },
   "build": {
-    "appId": "com.controlroll.admin",
-    "productName": "Control Roll Admin",
+    "appId": "com.inmutec.controlroll.admin",
+    "productName": "Multiservicios Inmutec Control Roll Admin",
     "directories": {
       "output": "dist"
     },
@@ -23,7 +23,7 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Control Roll Admin"
+      "shortcutName": "Multiservicios Inmutec Control Roll Admin"
     }
   },
   "dependencies": {
