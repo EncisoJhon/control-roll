@@ -7,24 +7,28 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dist:admin": "electron-builder --win nsis -c.extraMetadata.main=electron-admin.js -c.productName=\"Multiservicios Inmutec Control Roll Admin\""
+    "dist:admin": "electron-builder --win nsis -c.extraMetadata.main=electron-admin.js -c.productName=\"INMUTEC Admin\""
   },
   "build": {
-    "appId": "com.inmutec.controlroll.admin",
-    "productName": "Multiservicios Inmutec Control Roll Admin",
+    "appId": "com.inmutec.admin",
+    "productName": "INMUTEC Admin",
     "directories": {
       "output": "dist"
     },
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "public/icon.ico"
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Multiservicios Inmutec Control Roll Admin"
-    }
+      "shortcutName": "INMUTEC Admin",
+      "installerIcon": "public/icon.ico",
+      "uninstallerIcon": "public/icon.ico"
+    }   
+
   },
   "dependencies": {
     "@capacitor/android": "^8.5.2",
