@@ -1,6 +1,12 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
+// Desactivar logs de Chromium y evitar la creación de debug.log
+app.commandLine.appendSwitch('disable-logging');
+app.commandLine.appendSwitch('log-level', '3'); // Solo errores críticos
+app.commandLine.appendSwitch('disable-gpu-process-crash-limit');
+app.whenReady().then(createWindow);
+
 let win;
 function createWindow() {
   win = new BrowserWindow({
@@ -26,9 +32,6 @@ function createWindow() {
 
   win.on('closed', () => { win = null; });
 }
-
-app.whenReady().then(createWindow);
-
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();
 });
